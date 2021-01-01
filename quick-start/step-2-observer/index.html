@@ -17,7 +17,7 @@
     
     
       
-        <title>Step 2 Client Library Integration - Observer for WebRTC</title>
+        <title>Step 2 Deploy observer - Observer for WebRTC</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#stats-interpretation-docker" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Step 2 Client Library Integration
+              Step 2 Deploy observer
             
           </span>
         </div>
@@ -174,8 +179,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../observer-arch.md" class="md-tabs__link">
-          Architecture
+        <a href="../step-1-observer-js-integrations/" class="md-tabs__link md-tabs__link--active">
+          Quick Start
         </a>
       
     </li>
@@ -187,21 +192,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../step-1-observer-and-exporter-installation/" class="md-tabs__link md-tabs__link--active">
-          Getting started
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../team/" class="md-tabs__link">
-          Team
+        <a href="../../observer-js.md" class="md-tabs__link">
+          Customization
         </a>
       
     </li>
@@ -215,6 +207,19 @@
       
         <a href="../../changelog.md" class="md-tabs__link">
           Changelog
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../team/team/" class="md-tabs__link">
+          Team
         </a>
       
     </li>
@@ -277,83 +282,21 @@
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Architecture
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Architecture" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
-        Architecture
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../observer-arch.md" class="md-nav__link">
-      Observer
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../exporter-arch.md" class="md-nav__link">
-      Exporter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../client-lib-arch.md" class="md-nav__link">
-      Client Library
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
-      Getting started
+    <label class="md-nav__link" for="nav-2">
+      Quick Start
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Getting started" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+    <nav class="md-nav" aria-label="Quick Start" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
-        Getting started
+        Quick Start
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -364,8 +307,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../step-1-observer-and-exporter-installation/" class="md-nav__link">
-      Step 1 Observer and Exporter Installation
+    <a href="../step-1-observer-js-integrations/" class="md-nav__link">
+      Step 1 Include client libraries
     </a>
   </li>
 
@@ -381,10 +324,61 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Step 2 Deploy observer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Step 2 Client Library Integration
+      Step 2 Deploy observer
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-Requisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hazelcast-configuration" class="md-nav__link">
+    Hazelcast configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -395,8 +389,82 @@
 
 
   <li class="md-nav__item">
-    <a href="../step-3-visualization/" class="md-nav__link">
-      Step 3 Visualization
+    <a href="../step-3-observer-connector/" class="md-nav__link">
+      Step 3 Deploy observer-connector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../step-4-observer-visualiser/" class="md-nav__link">
+      Step 4 Visualise
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Customization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Customization" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../observer-js.md" class="md-nav__link">
+      observer-js
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../observer.md" class="md-nav__link">
+      observer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../observer-connector.md" class="md-nav__link">
+      observer-connector
     </a>
   </li>
 
@@ -416,49 +484,11 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Team
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Team" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon"></span>
-        Team
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../team/" class="md-nav__link">
-      Members
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
       Changelog
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Changelog" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         <span class="md-nav__icon md-icon"></span>
         Changelog
       </label>
@@ -482,6 +512,44 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Team
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Team" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Team
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../team/team/" class="md-nav__link">
+      Members
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -489,15 +557,81 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-Requisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hazelcast-configuration" class="md-nav__link">
+    Hazelcast configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Step 2 Client Library Integration</h1>
-                
-                
+                <h1 id="stats-interpretation-docker">Stats Interpretation (Docker)<a class="headerlink" href="#stats-interpretation-docker" title="Permanent link">&para;</a></h1>
+<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>install docker-compose <a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></li>
+<li>If you want to customize any Kafka parameters, simply add them as environment variables in docker-compose.yml.</li>
+<li>Kafka's log4j usage can be customized by adding environment variables prefixed with LOG4J_.</li>
+</ul>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<p>In order to quickly run WebRTC-Observer on a host running Docker and Docker Compose, follow these steps:</p>
+<ol>
+<li>Clone this repository</li>
+</ol>
+<p><code>git clone https://github.com/ObserveRTC/docker-webrtc-observer.git</code></p>
+<ol>
+<li>Run</li>
+</ol>
+<p><code>docker-compose up</code></p>
+<h3 id="hazelcast-configuration">Hazelcast configuration<a class="headerlink" href="#hazelcast-configuration" title="Permanent link">&para;</a></h3>
+<p>The Observer uses hazelcast as an IMDG, and all the configuration related to hazelcast is in hazelcast-config.yml, which is automatically mounted in the docker when you run it.</p>
                 
               
               
@@ -516,7 +650,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../step-1-observer-and-exporter-installation/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../step-1-observer-js-integrations/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -525,19 +659,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Step 1 Observer and Exporter Installation
+                Step 1 Include client libraries
               </div>
             </div>
           </a>
         
         
-          <a href="../step-3-visualization/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../step-3-observer-connector/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Step 3 Visualization
+                Step 3 Deploy observer-connector
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
