@@ -17,7 +17,7 @@
     
     
       
-        <title>Step 2 Deploy observer - Observer for WebRTC</title>
+        <title>Tokbox - Observer for WebRTC</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stats-interpretation-docker" class="md-skip">
+        <a href="#stats-collection-for-tokbox" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Step 2 Deploy observer
+              Tokbox
             
           </span>
         </div>
@@ -179,7 +179,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../step-1-observer-js-integrations/" class="md-tabs__link md-tabs__link--active">
+        <a href="../step-1-observer/" class="md-tabs__link md-tabs__link--active">
           Quick Start
         </a>
       
@@ -307,8 +307,43 @@
 
 
   <li class="md-nav__item">
-    <a href="../step-1-observer-js-integrations/" class="md-nav__link">
-      Step 1 Include client libraries
+    <a href="../step-1-observer/" class="md-nav__link">
+      Step 1 Deploy observer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Step 2 Include client libraries
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Step 2 Include client libraries" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Step 2 Include client libraries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../step-2-1-jitsi-integration/" class="md-nav__link">
+      Jitsi
     </a>
   </li>
 
@@ -328,12 +363,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Step 2 Deploy observer
+        Tokbox
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Step 2 Deploy observer
+      Tokbox
     </a>
     
       
@@ -350,23 +385,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    Pre-Requisites
+  <a href="#opentok-quickstart" class="md-nav__link">
+    OpenTok Quickstart 
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="OpenTok Quickstart ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hazelcast-configuration" class="md-nav__link">
-    Hazelcast configuration
+  <a href="#include-core-library" class="md-nav__link">
+    Include core library
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-server-endpoint-in-global-window-scope" class="md-nav__link">
+    Define server endpoint in global( window ) scope
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include-the-integration-library" class="md-nav__link">
+    Include the integration library
   </a>
   
 </li>
@@ -380,6 +422,11 @@
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -574,23 +621,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    Pre-Requisites
+  <a href="#opentok-quickstart" class="md-nav__link">
+    OpenTok Quickstart 
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="OpenTok Quickstart ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hazelcast-configuration" class="md-nav__link">
-    Hazelcast configuration
+  <a href="#include-core-library" class="md-nav__link">
+    Include core library
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-server-endpoint-in-global-window-scope" class="md-nav__link">
+    Define server endpoint in global( window ) scope
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include-the-integration-library" class="md-nav__link">
+    Include the integration library
   </a>
   
 </li>
@@ -613,25 +667,47 @@
               
                 
                 
-                <h1 id="stats-interpretation-docker">Stats Interpretation (Docker)<a class="headerlink" href="#stats-interpretation-docker" title="Permanent link">&para;</a></h1>
-<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
-<ul>
-<li>install docker-compose <a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></li>
-<li>If you want to customize any Kafka parameters, simply add them as environment variables in docker-compose.yml.</li>
-<li>Kafka's log4j usage can be customized by adding environment variables prefixed with LOG4J_.</li>
-</ul>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>In order to quickly run WebRTC-Observer on a host running Docker and Docker Compose, follow these steps:</p>
+                <h1 id="stats-collection-for-tokbox">Stats Collection for TokBox<a class="headerlink" href="#stats-collection-for-tokbox" title="Permanent link">&para;</a></h1>
+<h3 id="opentok-quickstart">OpenTok Quickstart <a name="opentok-quickstart"></a><a class="headerlink" href="#opentok-quickstart" title="Permanent link">&para;</a></h3>
+<h4 id="include-core-library">Include core library<a class="headerlink" href="#include-core-library" title="Permanent link">&para;</a></h4>
+<p>You should do this before including <code>opentok.js</code> file in your html page. We have a public version hosted on GitHub you can use as shown below.</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://observertc.github.io/observer-js/dist/v0.3.5/observer.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="define-server-endpoint-in-global-window-scope">Define server endpoint in global( window ) scope<a class="headerlink" href="#define-server-endpoint-in-global-window-scope" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="kd">let</span> <span class="nx">observerWsEndPoint</span> <span class="o">=</span> <span class="nx">ObserverRTC</span><span class="p">.</span><span class="nx">ParserUtil</span><span class="p">.</span><span class="nx">parseWsServerUrl</span><span class="p">(</span>
+            <span class="s2">&quot;{OBSERVER_WS_ENDPOINT}&quot;</span><span class="p">,</span>               <span class="c1">// observerURL</span>
+            <span class="s2">&quot;{ServiceUUID}&quot;</span><span class="p">,</span>                        <span class="c1">// Add a unique ServiceUUID here</span>
+            <span class="s2">&quot;{Your_Service_name}&quot;</span><span class="p">,</span>                  <span class="c1">// MediaUnitID</span>
+            <span class="s2">&quot;v20200114&quot;</span>                             <span class="c1">// getStats-version</span>
+        <span class="p">);</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="include-the-integration-library">Include the integration library<a class="headerlink" href="#include-the-integration-library" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Clone this repository</li>
+<li>Minified version: 
+    <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://observertc.github.io/integrations/dist/v0.0.2/tokbox.integration.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></li>
+<li>In the end it might look similiar to this
+    <div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="c">&lt;!--  </span>
+<span class="c">  .....</span>
+<span class="c">  .....</span>
+<span class="c">  --&gt;</span>      
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://observertc.github.io/observer-js/dist/v0.3.5/observer.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">let</span> <span class="nx">observerWsEndPoint</span> <span class="o">=</span> <span class="nx">ObserverRTC</span><span class="p">.</span><span class="nx">ParserUtil</span><span class="p">.</span><span class="nx">parseWsServerUrl</span><span class="p">(</span>
+        <span class="s2">&quot;ws://localhost:8088/&quot;</span><span class="p">,</span>           <span class="c1">// observerURL</span>
+        <span class="s2">&quot;b8bf0467-d7a9-4caa-93c9-8cd6e0dd7731&quot;</span><span class="p">,</span> <span class="c1">// Add a unique ServiceUUID here</span>
+        <span class="s2">&quot;opentok-demo&quot;</span><span class="p">,</span>                         <span class="c1">// MediaUnitID</span>
+        <span class="s2">&quot;v20200114&quot;</span>                             <span class="c1">// StatsVersion</span>
+    <span class="p">);</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://observertc.github.io/integrations/dist/v0.0.2/tokbox.integration.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://static.opentok.com/v2/js/opentok.js&quot;</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></li>
 </ol>
-<p><code>git clone https://github.com/ObserveRTC/docker-webrtc-observer.git</code></p>
-<ol>
-<li>Run</li>
-</ol>
-<p><code>docker-compose up</code></p>
-<h3 id="hazelcast-configuration">Hazelcast configuration<a class="headerlink" href="#hazelcast-configuration" title="Permanent link">&para;</a></h3>
-<p>The Observer uses hazelcast as an IMDG, and all the configuration related to hazelcast is in hazelcast-config.yml, which is automatically mounted in the docker when you run it.</p>
                 
               
               
@@ -650,7 +726,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../step-1-observer-js-integrations/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../step-2-1-jitsi-integration/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -659,7 +735,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Step 1 Include client libraries
+                Jitsi
               </div>
             </div>
           </a>

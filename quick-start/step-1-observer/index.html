@@ -12,19 +12,19 @@
       
         <meta name="author" content="Observer">
       
-      <link rel="shortcut icon" href="assets/favicon.png">
+      <link rel="shortcut icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
-        <title>Observer for WebRTC</title>
+        <title>Step 1 Deploy observer - Observer for WebRTC</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ce7da9e3.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ce7da9e3.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.31e6bbac.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.31e6bbac.min.css">
         
           
           
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#observertc" class="md-skip">
+        <a href="#stats-interpretation-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -81,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="." title="Observer for WebRTC" class="md-header-nav__button md-logo" aria-label="Observer for WebRTC">
+    <a href="../.." title="Observer for WebRTC" class="md-header-nav__button md-logo" aria-label="Observer for WebRTC">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
@@ -98,7 +98,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Step 1 Deploy observer
             
           </span>
         </div>
@@ -158,14 +158,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -177,7 +179,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="quick-start/step-1-observer/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link md-tabs__link--active">
           Quick Start
         </a>
       
@@ -190,7 +192,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="observer-js.md" class="md-tabs__link">
+        <a href="../../observer-js.md" class="md-tabs__link">
           Customization
         </a>
       
@@ -203,7 +205,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="changelog.md" class="md-tabs__link">
+        <a href="../../changelog.md" class="md-tabs__link">
           Changelog
         </a>
       
@@ -216,7 +218,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="team/team/" class="md-tabs__link">
+        <a href="../../team/team/" class="md-tabs__link">
           Team
         </a>
       
@@ -240,7 +242,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Observer for WebRTC" class="md-nav__button md-logo" aria-label="Observer for WebRTC">
+    <a href="../.." title="Observer for WebRTC" class="md-nav__button md-logo" aria-label="Observer for WebRTC">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
@@ -268,63 +270,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="." class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#benefits-of-collecting-webrtc-stats" class="md-nav__link">
-    Benefits of collecting WebRTC stats
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    Use cases
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-to-choose-observertc" class="md-nav__link">
-    Why to choose ObserveRTC?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -332,10 +282,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Quick Start
@@ -353,11 +305,69 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="quick-start/step-1-observer/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Step 1 Deploy observer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Step 1 Deploy observer
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-Requisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hazelcast-configuration" class="md-nav__link">
+    Hazelcast configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -388,7 +398,7 @@
 
 
   <li class="md-nav__item">
-    <a href="quick-start/step-2-1-jitsi-integration/" class="md-nav__link">
+    <a href="../step-2-1-jitsi-integration/" class="md-nav__link">
       Jitsi
     </a>
   </li>
@@ -400,7 +410,7 @@
 
 
   <li class="md-nav__item">
-    <a href="quick-start/step-2-2-tokbox-integration/" class="md-nav__link">
+    <a href="../step-2-2-tokbox-integration/" class="md-nav__link">
       Tokbox
     </a>
   </li>
@@ -417,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="quick-start/step-3-observer-connector/" class="md-nav__link">
+    <a href="../step-3-observer-connector/" class="md-nav__link">
       Step 3 Deploy observer-connector
     </a>
   </li>
@@ -429,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="quick-start/step-4-observer-visualiser/" class="md-nav__link">
+    <a href="../step-4-observer-visualiser/" class="md-nav__link">
       Step 4 Visualise
     </a>
   </li>
@@ -467,7 +477,7 @@
 
 
   <li class="md-nav__item">
-    <a href="observer-js.md" class="md-nav__link">
+    <a href="../../observer-js.md" class="md-nav__link">
       observer-js
     </a>
   </li>
@@ -479,7 +489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="observer.md" class="md-nav__link">
+    <a href="../../observer.md" class="md-nav__link">
       observer
     </a>
   </li>
@@ -491,7 +501,7 @@
 
 
   <li class="md-nav__item">
-    <a href="observer-connector.md" class="md-nav__link">
+    <a href="../../observer-connector.md" class="md-nav__link">
       observer-connector
     </a>
   </li>
@@ -529,7 +539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="changelog.md" class="md-nav__link">
+    <a href="../../changelog.md" class="md-nav__link">
       Release notes
     </a>
   </li>
@@ -567,7 +577,7 @@
 
 
   <li class="md-nav__item">
-    <a href="team/team/" class="md-nav__link">
+    <a href="../../team/team/" class="md-nav__link">
       Members
     </a>
   </li>
@@ -602,23 +612,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#benefits-of-collecting-webrtc-stats" class="md-nav__link">
-    Benefits of collecting WebRTC stats
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-Requisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    Use cases
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hazelcast-configuration" class="md-nav__link">
+    Hazelcast configuration
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#why-to-choose-observertc" class="md-nav__link">
-    Why to choose ObserveRTC?
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -635,26 +651,25 @@
               
                 
                 
-                <h1 id="observertc">ObserveRTC<a class="headerlink" href="#observertc" title="Permanent link">&para;</a></h1>
-<p>ObserveRTC is an open source initiative aimed to provide tools to collect, interpret, and visualize WebRTC metrics in real-time.<img alt="Placeholder" src="images/observertc-overview.png" /></p>
-<h2 id="benefits-of-collecting-webrtc-stats">Benefits of collecting WebRTC stats<a class="headerlink" href="#benefits-of-collecting-webrtc-stats" title="Permanent link">&para;</a></h2>
+                <h1 id="stats-interpretation-docker">Stats Interpretation (Docker)<a class="headerlink" href="#stats-interpretation-docker" title="Permanent link">&para;</a></h1>
+<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Performance tuning - Ability to debug/improve your WebRTC applications.</li>
-<li>Regression analysis - Quantify the impact of changes you made. </li>
-<li>System operations - Measure and monitor the performance of your application.</li>
-<li>Troubleshooting &amp; debugging - Investigate technical issues. </li>
-<li>Usage trends - Track/Undetstand how your app is used. </li>
+<li>install docker-compose <a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></li>
+<li>If you want to customize any Kafka parameters, simply add them as environment variables in docker-compose.yml.</li>
+<li>Kafka's log4j usage can be customized by adding environment variables prefixed with LOG4J_.</li>
 </ul>
-<h2 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
-<p><strong>As an application developer</strong> you can use ObserveRTC to debug your WebRTC applications.</p>
-<p><strong>As a product owner</strong> you can use ObserveRTC to measure and monitor the performance of your application.</p>
-<p><strong>As an operations team member</strong> you can monitor the health and get critical alerts about your application. </p>
-<h2 id="why-to-choose-observertc">Why to choose ObserveRTC?<a class="headerlink" href="#why-to-choose-observertc" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Open source and designed to be integrated with other open-source solutions.</li>
-<li>Own the data from your applications and run further analysis. </li>
-<li>Designed for the cloud. When the size of your memory and compute requirements increase, new resources can be dynamically added to your cluster to scale elastically. e.g. <a href="https://hazelcast.org">hazelcast</a> as an in-memory distributed databse for resiliance. </li>
-</ul>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<p>In order to quickly run WebRTC-Observer on a host running Docker and Docker Compose, follow these steps:</p>
+<ol>
+<li>Clone this repository</li>
+</ol>
+<p><code>git clone https://github.com/ObserveRTC/docker-webrtc-observer.git</code></p>
+<ol>
+<li>Run</li>
+</ol>
+<p><code>docker-compose up</code></p>
+<h3 id="hazelcast-configuration">Hazelcast configuration<a class="headerlink" href="#hazelcast-configuration" title="Permanent link">&para;</a></h3>
+<p>The Observer uses hazelcast as an IMDG, and all the configuration related to hazelcast is in hazelcast-config.yml, which is automatically mounted in the docker when you run it.</p>
                 
               
               
@@ -673,14 +688,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
         
-          <a href="quick-start/step-1-observer/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../step-2-1-jitsi-integration/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Step 1 Deploy observer
+                Jitsi
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -769,15 +798,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.a018d6bb.min.js"></script>
-      <script src="assets/javascripts/bundle.4b42b5e6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.a018d6bb.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4b42b5e6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../..",
           features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
