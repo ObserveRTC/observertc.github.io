@@ -34,7 +34,7 @@ This should look something like:
 
 ```
 
-#### Use the library in Jitsi project
+#### Configure your Jitsi project to send stats to observer
 
 For existing installations and typical deployments you can simply add a few lines to the end of the `meet-[your-domain]-config.js` configuration file. This is usually located under `/etc/jitsi/meet` in the Debian installation.
 
