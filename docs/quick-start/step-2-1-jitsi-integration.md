@@ -80,7 +80,6 @@ Now, if we build a new jitsi-meet container, these two environment variable will
 
 -  You need to set the `{OBSERVER_WS_ENDPOINT}` based on the observer deployment, you can set this later after you deploy Observer in your environment. 
 
-
 #### Reload the Jitsi Meet page from browser to apply changes. Jitsi Meet now integrated. 
 
 
